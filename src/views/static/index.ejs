@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+
+        <!-- <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title><%= title %></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylsheet" href="/css/application.css"> -->
+
+        <!-- The head info is replaced with the head partial -->
+        <% include ./partials/head.ejs %>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!-- Navigation is replaced with the nav partial -->
+        <% include ./partials/navbar.ejs %>
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blocipedia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <!-- Page Content -->
+        <main class="container">
+
+            <header class="jumbotron my-2">
+                <h1 class="display-5">Blocipedia: Social, Markdown Wikis</h1>
+                <p class="lead">Create and share Markdown Wikis</p>
+                <a href="#" class="btn btn-primary btn-lg">Sign-up</a>
+            </header>
+
+            <!-- Page Features Look into putting planns side by side-->
+
+            <section class="col-lg-4">
+                <h4 class="card-title">Free Plan</h4>
+                <a href="#" class="btn btn-primary btn-lg">Free Plan</a>
+                <p class="card-text">Create as many public wikis as you want!</p>
+            </section>
+
+            <section class="col-lg-4">
+                <h4 class="card-title">Premium Plan</h4>
+                <a href="#" class="btn btn-primary btn-lg">Premium Plan</a>
+                <p class="card-text">Create private wikis!</p>
+            </section>
+
+        </main>
+          <!-- Cut out base scripts and moved into seperate folder instead of commenting out -->
+          <% include ./partials/baseScripts.ejs %>
+    </body>
+</html>
